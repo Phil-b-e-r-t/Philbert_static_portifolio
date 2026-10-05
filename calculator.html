@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SmartCalc | Ampurira Philbert</title>
+
+    <link rel="stylesheet" href="css/calculator.css" />
+  </head>
+
+  <body>
+
+    <div style="text-align:center;">
+        <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+    </div>
+
+    <main class="calculator">
+      <header class="calculator-header">
+        <h1>SmartCalc</h1>
+      </header>
+
+      <section class="display">
+        <div class="previous-value"></div>
+        <div class="current-value">0</div>
+      </section>
+      <section class="mode-switch">
+        <button id="basic-mode" class="mode active">Basic</button>
+        <button id="scientific-mode" class="mode">Scientific</button>
+      </section>
+      <section class="angle-mode">
+        <button id="degree-mode" class="angle active">DEG</button>
+        <button id="radian-mode" class="angle">RAD</button>
+      </section>
+
+      <section class="scientific-buttons" id="scientific-buttons">
+        <button data-action="sin">sin</button>
+        <button data-action="cos">cos</button>
+        <button data-action="tan">tan</button>
+        <button data-action="log">log</button>
+
+        <button data-action="asin">sin⁻¹</button>
+        <button data-action="acos">cos⁻¹</button>
+        <button data-action="atan">tan⁻¹</button>
+        <button data-action="ln">ln</button>
+        <button data-action="sqrt">√</button>
+        <button data-action="square">x²</button>
+        <button data-action="power">xʸ</button>
+        <button data-action="factorial">x!</button>
+
+        <button data-action="pi">π</button>
+        <button data-action="e">e</button>
+        <button data-action="inverse">1/x</button>
+        <button data-action="sign">±</button>
+      </section>
+      <section class="buttons">
+        <button class="clear">AC</button>
+        <button>DEL</button>
+        <button>%</button>
+
+        <button class="operator">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">×</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">−</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+
+        <button class="zero">0</button>
+        <button>.</button>
+        <button class="equals">=</button>
+      </section>
+    </main>
+    <script src="js/calculator.js"></script>
+  </body>
+</html>
